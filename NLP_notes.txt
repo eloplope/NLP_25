@@ -1,0 +1,5 @@
+negative lookahead 
+
+
+
+python tok_eval.py tok.dev.txt elhe.txt

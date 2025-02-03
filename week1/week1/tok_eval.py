@@ -6,7 +6,7 @@ if len(sys.argv) < 3:
 
 def readTok(path):
     data = []
-    for line in open(path):
+    for line in open(path, encoding='utf-8'):  # ← Added encoding here
         parts = line.strip().split('\t')
         data.append(parts[-1].split(' '))
     return data
