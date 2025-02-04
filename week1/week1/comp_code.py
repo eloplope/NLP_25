@@ -94,7 +94,7 @@ token_pattern = r'\d+[ndNDthTH]+|http\S+|(?:\$)?\d[\$:\d,./-]*|n\'t|N\'T|(?:[@~#
 final_pattern = f'({emoji_pattern}|{token_pattern})'
 
 # Process the input file and write the output
-with open("tok.dev.txt", "r", encoding="utf-8", errors="ignore") as f_in, \
+with open("tok.test.txt", "r", encoding="utf-8", errors="ignore") as f_in, \
      open(f"{ITU_USERNAME}.txt", "w", encoding="utf-8") as f_out:
     
     for line in f_in:
