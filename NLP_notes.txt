@@ -1,5 +1,6 @@
 negative lookahead 
 
 
+cat da_arto.conll | awk -F'\t' '$2 == "B-PER"'
 
 python tok_eval.py tok.dev.txt elhe.txt
